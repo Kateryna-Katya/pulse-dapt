@@ -951,3 +951,75 @@ a {
     margin: 5px 0;
     transition: var(--transition);
 }
+/* --- Legal Pages Styles --- */
+.pages {
+    padding: 160px 0 100px;
+    /* Большой отступ сверху, чтобы не перекрывал фиксированный хедер */
+    background: var(--white);
+    min-height: 80vh;
+}
+
+.pages .container {
+    max-width: 800px;
+    /* Сужаем контент для лучшей читаемости текста */
+}
+
+.pages h1 {
+    font-size: clamp(1.6rem, 4vw, 3rem);
+    margin-bottom: 40px;
+    line-height: 1.1;
+    color: var(--primary);
+}
+
+.pages h2 {
+    font-size: 1.8rem;
+    margin: 40px 0 20px;
+    color: var(--primary);
+}
+
+.pages p {
+    font-size: 1.1rem;
+    color: var(--text);
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.pages ul {
+    margin-bottom: 30px;
+}
+
+.pages li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.pages li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+}
+
+.pages strong {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.pages a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.pages a:hover {
+    color: var(--primary);
+    text-decoration: none;
+}
